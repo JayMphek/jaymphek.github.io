@@ -172,6 +172,13 @@
     box-shadow: 0 5px 15px rgba(36, 41, 46, 0.3);
 }
 
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .peas-table {
     width: 100%;
     border-collapse: collapse;
@@ -179,7 +186,8 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 800px;
+    /* Ensures table doesn't compress too much */
 }
 
 .peas-table th,
@@ -187,17 +195,67 @@
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #e0e0e0;
+    word-wrap: break-word;
 }
 
 .peas-table th {
     background: linear-gradient(135deg, #000000 0%, #404040 100%);
     color: white;
     font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .peas-table tr:hover {
     background: #f8f8f8;
 }
+
+/* Solution 2: Card Layout for Mobile */
+.peas-cards {
+    display: none;
+}
+
+.peas-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.peas-card h4 {
+    color: #000;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2196F3;
+}
+
+.peas-card .card-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.peas-card .card-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.peas-card .card-label {
+    font-weight: 600;
+    color: #2196F3;
+    margin-bottom: 5px;
+}
+
+.peas-card .card-value {
+    color: #555;
+    line-height: 1.5;
+}
+
 
 .environment-properties {
     display: grid;
@@ -247,3 +305,55 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 1024px) {
+    .scroll-indicator {
+        display: block;
+    }
+
+    .peas-table th,
+    .peas-table td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hide original table, show cards */
+    .table-scroll {
+        display: none;
+    }
+
+    .peas-cards {
+        display: block;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .solution {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .peas-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .peas-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .peas-card .card-label {
+        font-size: 0.85rem;
+    }
+
+    .peas-card .card-value {
+        font-size: 0.85rem;
+    }
+    
+    }

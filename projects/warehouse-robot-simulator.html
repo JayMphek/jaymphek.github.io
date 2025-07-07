@@ -128,42 +128,110 @@
 
             <div class="content-section">
                 <h2>PEAS Framework Analysis</h2>
-                <p>The system environment is analyzed using the PEAS (Performance, Environment, Actuators, Sensors)
-                    framework:</p>
-                <table class="peas-table">
-                    <thead>
-                        <tr>
-                            <th>Agent Type</th>
-                            <th>Performance Measures</th>
-                            <th>Environment</th>
-                            <th>Actuators</th>
-                            <th>Sensors</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Order Allocation Agent</td>
-                            <td>Efficient order distribution, minimizing idle time, balancing robot workload</td>
-                            <td>Virtual warehouse with multiple robots, orders, and checkouts</td>
-                            <td>Assigns orders to robots based on workload and availability</td>
-                            <td>System status updates on robot availability, order queue</td>
-                        </tr>
-                        <tr>
-                            <td>Path Optimization Agent</td>
-                            <td>Shortest possible path, minimal energy use, quick order fulfillment</td>
-                            <td>Virtual warehouse with aisles, shelves, and pickup points</td>
-                            <td>Generates optimized paths for robots to follow</td>
-                            <td>Warehouse layout data, order item locations, robot positions</td>
-                        </tr>
-                        <tr>
-                            <td>Obstacle Avoidance Agent</td>
-                            <td>Avoid collisions, smooth navigation</td>
-                            <td>Virtual warehouse with static and moving obstacles</td>
-                            <td>Adjusts robot movement to avoid collisions</td>
-                            <td>Lidar/camera-based object detection, real-time position tracking</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>The system environment is analyzed using the PEAS (Performance, Environment, Actuators, Sensors) framework:</p>
+            
+                <!-- Table version for desktop/tablet -->
+                <div class="table-scroll">
+                    <table class="peas-table">
+                        <thead>
+                            <tr>
+                                <th>Agent Type</th>
+                                <th>Performance Measures</th>
+                                <th>Environment</th>
+                                <th>Actuators</th>
+                                <th>Sensors</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Order Allocation Agent</td>
+                                <td>Efficient order distribution, minimizing idle time, balancing robot workload</td>
+                                <td>Virtual warehouse with multiple robots, orders, and checkouts</td>
+                                <td>Assigns orders to robots based on workload and availability</td>
+                                <td>System status updates on robot availability, order queue</td>
+                            </tr>
+                            <tr>
+                                <td>Path Optimization Agent</td>
+                                <td>Shortest possible path, minimal energy use, quick order fulfillment</td>
+                                <td>Virtual warehouse with aisles, shelves, and pickup points</td>
+                                <td>Generates optimized paths for robots to follow</td>
+                                <td>Warehouse layout data, order item locations, robot positions</td>
+                            </tr>
+                            <tr>
+                                <td>Obstacle Avoidance Agent</td>
+                                <td>Avoid collisions, smooth navigation</td>
+                                <td>Virtual warehouse with static and moving obstacles</td>
+                                <td>Adjusts robot movement to avoid collisions</td>
+                                <td>Lidar/camera-based object detection, real-time position tracking</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+    
+            
+                <!-- Card version for mobile -->
+                <div class="peas-cards">
+                    <div class="peas-card">
+                        <h4>Order Allocation Agent</h4>
+                        <div class="card-row">
+                            <div class="card-label">Performance Measures</div>
+                            <div class="card-value">Efficient order distribution, minimizing idle time, balancing robot workload</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Environment</div>
+                            <div class="card-value">Virtual warehouse with multiple robots, orders, and checkouts</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Actuators</div>
+                            <div class="card-value">Assigns orders to robots based on workload and availability</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Sensors</div>
+                            <div class="card-value">System status updates on robot availability, order queue</div>
+                        </div>
+                    </div>
+                
+                    <div class="peas-card">
+                        <h4>Path Optimization Agent</h4>
+                        <div class="card-row">
+                            <div class="card-label">Performance Measures</div>
+                            <div class="card-value">Shortest possible path, minimal energy use, quick order fulfillment</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Environment</div>
+                            <div class="card-value">Virtual warehouse with aisles, shelves, and pickup points</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Actuators</div>
+                            <div class="card-value">Generates optimized paths for robots to follow</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Sensors</div>
+                            <div class="card-value">Warehouse layout data, order item locations, robot positions</div>
+                        </div>
+                    </div>
+                
+                    <div class="peas-card">
+                        <h4>Obstacle Avoidance Agent</h4>
+                        <div class="card-row">
+                            <div class="card-label">Performance Measures</div>
+                            <div class="card-value">Avoid collisions, smooth navigation</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Environment</div>
+                            <div class="card-value">Virtual warehouse with static and moving obstacles</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Actuators</div>
+                            <div class="card-value">Adjusts robot movement to avoid collisions</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-label">Sensors</div>
+                            <div class="card-value">Lidar/camera-based object detection, real-time position tracking</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="content-section">
