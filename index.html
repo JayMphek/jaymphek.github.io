@@ -4,20 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMJ Mphekwane - Computer Science & AI Graduate</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MMJ Mphekwane Profile website</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
     <nav>
         <div class="container">
-            <ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul id="navMenu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#research">Research</a></li>
+                <li class="dropdown">
+                    <a href="#projects">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="projects/periodpledge.html">PeriodPledge Mobile App</a>
+                        <a href="projects/ai-mammography.html">AI Mammography Detection</a>
+                        <a href="projects/warehouse-robot-simulator.html">Warehouse Robot Simulator</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -25,11 +32,11 @@
     <header>
         <div class="container">
             <div class="profile-photo">
-                <!-- Replace the text below with: <img src="your-photo.jpg" alt="MMJ Mphekwane"> -->
-                Add Your Photo Here
+                <img src="pictures/my_pic.jpg" alt="MMJ Mphekwane">
             </div>
-            <h1>Modjadji MJ Mphekwane</h1>
-            <p class="tagline">Computer Science & AI Graduate | Honours Student</p>
+            <h1>Mahlalefetsa MJ Mphekwane</h1>
+            <p class="tagline">BScHons in Computer Science with AI Student | BSc in Computer Science and Mathematics
+                Graduate</p>
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📧</span>
@@ -37,11 +44,11 @@
                 </div>
                 <div class="contact-item">
                     <span>📱</span>
-                    <span>0662279382</span>
+                    <span>0662279382 | 0649246342</span>
                 </div>
                 <div class="contact-item">
                     <span>📍</span>
-                    <span>Alberton, Johannesburg</span>
+                    <span>Alberton, Gauteng, South Africa</span>
                 </div>
             </div>
         </div>
@@ -52,14 +59,17 @@
             <section id="about">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <p>I am a passionate Computer Science and AI graduate currently pursuing my BSc Honours in Computer
-                        Science with AI at the University of Johannesburg. With a strong foundation in data analysis,
+                    <p>I am a passionate Computer Science graduate currently pursuing my BSc Honours in Computer
+                        Science with AI at the University of Johannesburg. With a strong foundation in artificial
+                        intelligence,
                         machine learning, and programming, I am eager to leverage technology to solve complex problems
                         and drive innovation.</p>
 
                     <p>Having completed my undergraduate degree with majors in Computer Sciences, Computer Applications,
-                        and Mathematics, my academic journey has equipped me with growing expertise in artificial
-                        intelligence, computer vision, and data analytics. Beyond technical skills, my leadership
+                        and Mathematics, my academic journey has equipped me with growing expertise in software
+                        developing,
+                        , system programming, full-stack development, machine learning and parallel computing. Beyond
+                        technical skills, my leadership
                         experience as Treasurer for the Wits School of CSAM Student Council has strengthened my
                         collaboration, communication, and problem-solving abilities.</p>
 
@@ -76,10 +86,37 @@
                         <h3>BSc Honours in Computer Science with AI</h3>
                         <div class="duration">University of Johannesburg | Jan 2025 - Present</div>
                         <ul>
-                            <li>Research topic area: Artificial Intelligence and Computer Vision</li>
-                            <li>Coursework: Artificial Intelligence, Advanced AI, Mobile Programming</li>
-                            <li>E-business Strategies, Ethical and Legal Aspects of IT</li>
-                            <li>Big Data Analytics, Optimization</li>
+                            <li> <b>Research topic:</b> AI-Driven Mammography Detection and Classification for Breast
+                                Cancer Diagnosis in South Africa
+
+                                <p><i>
+                                        This Honours research project proposes the development of an AI-driven
+                                        mammography analysis system designed to assist in
+                                        the early detection and classification of breast cancer. The system leverages
+                                        deep learning techniques—specifically
+                                        Convolutional Neural Networks (CNNs)—to automatically process full-field
+                                        mammogram images and identify abnormal regions
+                                        without prior annotation.
+
+                                        The novelty of the system lies in its dual-phased architecture: a detection
+                                        stage that autonomously locates potential
+                                        abnormalities and visually highlights them using bounding shapes, followed by a
+                                        classification stage that predicts the
+                                        type of abnormality, assesses its severity (benign or malignant), and estimates
+                                        its size in pixels.
+
+                                        The system will be trained and evaluated using the DMID Breast Cancer
+                                        Mammography
+                                        Dataset, which includes not only image data but also clinical annotations like
+                                        tissue type, BI-RADS scores, and
+                                        abnormality coordinates. These features allow the system to simulate
+                                        radiologist-like interpretations and support
+                                        clinical decision-making.
+                                    </i></p>
+                            </li>
+                            <li><b>Coursework:</b> Ethics and Legal Aspects of IT, Artificial Intelligence, Advanced AI,
+                                Mobile Programming, Optimization, WWW Programming: Big Data Analytics, E-business
+                                Strategies</li>
                         </ul>
                     </div>
 
@@ -87,10 +124,16 @@
                         <h3>Bachelor of Science</h3>
                         <div class="duration">University of the Witwatersrand | Mar 2021 - Dec 2024</div>
                         <ul>
-                            <li>Majors: Computer Sciences, Computer Applications, Mathematics</li>
-                            <li>Coursework: Machine Learning, Parallel Computing</li>
-                            <li>Advanced Analysis of Algorithms</li>
-                            <li>Data Structures and Programming</li>
+                            <li><b>Majors:</b> Computer Sciences, Computer Applications, Mathematics</li>
+                            <li><b>Coursework:</b>
+                                <p><i><b>Computer Applications:</b>Machine Learning, Parallel Computing, Computer
+                                        Graphics and Visualization, Software Design Project</i></p>
+                                <p><i><b>Computer Science:</b>Software Design, Advanced Analysis of Algorithms,
+                                        Operating Systems and System Programming, Finite Language and Automata</i></p>
+                                <p><i><b>Mathematics:</b>Real Analysis, Group Theory, Number Theory, Coding and
+                                        Cryptography, Complex Analysis, Positive Linear Systems</i></p>
+                            <li><b>Certificate:</b> </li>
+                            <li><b>Transcript:</b> </li>
                         </ul>
                     </div>
 
@@ -98,9 +141,10 @@
                         <h3>National Senior Certificate</h3>
                         <div class="duration">Glenbrack Secondary High School | Jan 2020 - Dec 2020</div>
                         <ul>
-                            <li>Distinctions: Life Orientation (86%)</li>
-                            <li>Physical Science (80%)</li>
-                            <li>Life Science (81%)</li>
+                            <li><b>Distinctions:</b> <i>Life Orientation (86%), Physical Science (80%),Life Science
+                                    (81%)</i></li>
+                            <li><b>Certificate:</b> </li>
+                            <li><b>Transcript:</b> </li>
                         </ul>
                     </div>
                 </div>
@@ -110,7 +154,7 @@
                 <h2>Leadership Experience</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h3>Wits SRC Office Subcommittee</h3>
+                        <h3>Wits SRC Office Subcommittee | Wits SRC Treasurer Office</h3>
                         <div class="duration">Nov 2023 - Oct 2024</div>
                         <ul>
                             <li>Supported students with financial aid and registration challenges</li>
@@ -120,7 +164,7 @@
                     </div>
 
                     <div class="timeline-item">
-                        <h3>Treasurer | Wits School of CSAM Student Council</h3>
+                        <h3>Treasurer | Wits School of Computer Science & Applied Mathematics Student Council</h3>
                         <div class="duration">Nov 2023 - Oct 2024</div>
                         <ul>
                             <li>Managed budget and council finances</li>
@@ -156,6 +200,8 @@
                             <span class="skill-tag">JavaScript</span>
                             <span class="skill-tag">PHP</span>
                             <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">SQL</span>
                         </div>
                     </div>
 
@@ -164,8 +210,12 @@
                         <div class="skill-tags">
                             <span class="skill-tag">React Native</span>
                             <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Data Analytics</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">JAX</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Jupyter Notebook</span>
+                            <span class="skill-tag">Git</span>
                         </div>
                     </div>
 
@@ -173,8 +223,13 @@
                         <h3>Technical Skills</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Full-Stack Development</span>
-                            <span class="skill-tag">AI & Computer Vision</span>
-                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Software & Mobile Development</span>
+                            <span class="skill-tag">Database Management</span>
+                            <span class="skill-tag">Artificial Intelligence</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">Deep Learning</span>
                             <span class="skill-tag">Algorithm Design</span>
                         </div>
                     </div>
@@ -185,15 +240,18 @@
                             <span class="skill-tag">Leadership</span>
                             <span class="skill-tag">Communication</span>
                             <span class="skill-tag">Problem-Solving</span>
+                            <span class="skill-tag">Adaptability</span>
+                            <span class="skill-tag">Time Management</span>
+                            <span class="skill-tag">Critical Thinking</span>
                             <span class="skill-tag">Teamwork</span>
-                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Scrum Mater</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="projects">
-                <h2>Current Projects</h2>
+                <h2>Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <h3>PeriodPledge Mobile Application</h3>
@@ -209,6 +267,9 @@
                             <span class="tech-tag">Mobile Development</span>
                             <span class="tech-tag">Social Impact</span>
                         </div>
+                        <div class="project-links">
+                            <a href="projects/periodpledge.html" class="project-link">View Project Details</a>
+                        </div>
                     </div>
 
                     <div class="project-card">
@@ -217,7 +278,7 @@
                         <p class="project-description">
                             Research project focusing on developing an AI system for automated breast cancer detection
                             and classification using mammography images. Utilizing computer vision and deep learning
-                            techniques to improve diagnostic accuracy and early detection rates.
+                            techniques to improve diagnostic accuracy.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
@@ -226,118 +287,40 @@
                             <span class="tech-tag">Medical AI</span>
                             <span class="tech-tag">Research</span>
                         </div>
+                        <div class="project-links">
+                            <a href="projects/ai-mammography.html" class="project-link">View Research Details</a>
+                        </div>
                     </div>
 
                     <div class="project-card">
-                        <h3>Additional Research Projects</h3>
-                        <span class="project-status status-current">Ongoing</span>
+                        <h3>AI-Powered Warehouse Robot Simulator</h3>
+                        <span class="project-status status-completed">Completed</span>
                         <p class="project-description">
-                            Multiple research initiatives in artificial intelligence and computer vision. Projects
-                            include optimization algorithms, machine learning applications, and data analytics solutions
-                            for various domains.
+                            A virtual simulation demonstrating how AI-powered warehouse robots can optimize order fulfillment
+                            using the Traveling Salesman Problem (TSP). The multi-agent system includes order allocation,
+                            path optimization, and obstacle avoidance agents working collaboratively to improve warehouse efficiency.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">AI Research</span>
-                            <span class="tech-tag">Data Analytics</span>
-                            <span class="tech-tag">Optimization</span>
-                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Multi-Agent Systems</span>
+                            <span class="tech-tag">TSP Optimization</span>
+                            <span class="tech-tag">Reinforcement Learning</span>
+                            <span class="tech-tag">Path Planning</span>
+                            <span class="tech-tag">AI Simulation</span>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="research">
-                <h2>Research Interests</h2>
-                <div class="about-content">
-                    <p>My research interests lie at the intersection of artificial intelligence, computer vision, and
-                        healthcare technology. I am particularly focused on developing AI solutions that can make a
-                        meaningful impact on society, especially in the healthcare sector.</p>
-
-                    <p>Current research areas include:</p>
-                    <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
-                        <li style="margin: 10px 0;">Medical image analysis and computer-aided diagnosis</li>
-                        <li style="margin: 10px 0;">Deep learning applications in healthcare</li>
-                        <li style="margin: 10px 0;">Optimization algorithms for complex problem-solving</li>
-                        <li style="margin: 10px 0;">Data analytics and big data processing</li>
-                        <li style="margin: 10px 0;">Mobile technology for social impact</li>
-                    </ul>
-
-                    <p>I am committed to conducting research that not only advances the field of computer science but
-                        also addresses real-world challenges and improves lives through technology.</p>
-                </div>
-            </section>
-        </div>
+                        <div class="project-links">
+                            <a href="projects/warehouse-robot-simulator.html" class="project-link">View Project Details</a>
+                        </div>
+                    </div>                    
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Modjadji MJ Mphekwane. All rights reserved.</p>
-            <p>Computer Science & AI Graduate | Honours Student</p>
+            <p>&copy; 2025 Mahlalefetsa MJ Mphekwane. All rights reserved.</p>
+            <p>BScHons in Computer Science with AI Student | BSc in Computer Science and Mathematics Graduate</p>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links and active tab highlighting
-        const navLinks = document.querySelectorAll('nav a');
-        const sections = document.querySelectorAll('section');
-
-        navLinks.forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                // Remove active class from all links
-                navLinks.forEach(link => link.classList.remove('active'));
-                // Add active class to clicked link
-                this.classList.add('active');
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const offsetTop = targetElement.offsetTop - 120;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Update active tab on scroll
-        window.addEventListener('scroll', function () {
-            const nav = document.querySelector('nav');
-            let current = '';
-
-            // Change nav background on scroll
-            if (window.scrollY > 100) {
-                nav.style.background = 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)';
-            } else {
-                nav.style.background = 'linear-gradient(135deg, #2c2c2c 0%, #404040 100%)';
-            }
-
-            // Find current section
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 140;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            // Update active nav link
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Set initial active tab
-        document.addEventListener('DOMContentLoaded', function () {
-            navLinks[0].classList.add('active');
-        });
-    </script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

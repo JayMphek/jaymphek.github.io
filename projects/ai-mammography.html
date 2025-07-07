@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Mammography Detection - MMJ Mphekwane</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/ai-mammography.css">
+</head>
+
+<body>
+    <a href="../index.html" class="back-button">← Back to Portfolio</a>
+
+    <div class="project-hero">
+        <div class="container">
+            <h1>AI-Driven Mammography Detection</h1>
+            <p class="subtitle">Advanced Breast Cancer Detection & Classification System</p>
+            <span class="project-status-large">In Progress - Honours Research</span>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="container">
+            <div class="content-section">
+                <h2>Research Overview</h2>
+                <p>This Honours research project addresses the critical need for early breast cancer detection in
+                    South Africa, where healthcare resources are often limited and access to specialized
+                    radiologists is constrained. By leveraging artificial intelligence, this system aims to assist
+                    healthcare professionals in making more accurate and timely diagnoses.</p>
+
+                <div class="tech-stack">
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">TensorFlow/Keras</span>
+                    <span class="tech-item">Computer Vision</span>
+                    <span class="tech-item">Convolutional Neural Networks</span>
+                    <span class="tech-item">Deep Learning</span>
+                    <span class="tech-item">Medical Imaging</span>
+                    <span class="tech-item">OpenCV</span>
+                </div>
+
+                <a href="#" class="github-link">
+                    🔗 View Research Repository
+                </a>
+            </div>
+
+            <div class="content-section">
+                <h2>Research Demonstration</h2>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        🔬 AI Model Demo Video
+                        <br>
+                        <small>(Research demonstration will be added upon completion)</small>
+                    </div>
+                </div>
+                <p><em>Research demonstration showcasing the AI system's ability to detect and classify breast cancer
+                        abnormalities in mammography images.</em></p>
+            </div>
+
+            <div class="content-section">
+                <h2>Research Context & Motivation</h2>
+                <div class="highlight-section">
+                    <p>Breast cancer is one of the leading causes of cancer-related deaths among women globally, and
+                        early detection significantly improves treatment outcomes and survival rates. This research
+                        focuses on developing an AI-powered system that can autonomously detect and classify breast
+                        cancer abnormalities in mammography images, providing crucial support to healthcare
+                        professionals in resource-constrained environments.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>System Architecture & Innovation</h2>
+                <div class="architecture-section">
+                    <p>The novelty of this system lies in its <strong>dual-phased architecture</strong>:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px;">
+                        <li><strong>Detection Stage:</strong> Autonomously locates potential abnormalities in mammogram
+                            images without prior annotation</li>
+                        <li><strong>Classification Stage:</strong> Predicts the type of abnormality, assesses severity
+                            (benign or malignant), and estimates size in pixels</li>
+                    </ul>
+                    <p>The system visually highlights detected abnormalities using bounding shapes, providing clear
+                        visual feedback to healthcare professionals for enhanced diagnostic accuracy.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Research Objectives</h2>
+                <div class="research-objectives">
+                    <div class="objective-card">
+                        <h4>🎯 Automated Detection</h4>
+                        <p>Develop a CNN-based system that can automatically identify and locate abnormal regions in
+                            full-field mammogram images without requiring manual annotation or preprocessing.</p>
+                    </div>
+                    <div class="objective-card">
+                        <h4>🔬 Intelligent Classification</h4>
+                        <p>Create a classification module that can distinguish between different types of abnormalities
+                            and determine their severity level (benign vs. malignant).</p>
+                    </div>
+                    <div class="objective-card">
+                        <h4>📐 Precise Measurement</h4>
+                        <p>Implement size estimation capabilities to provide accurate measurements of detected
+                            abnormalities, assisting in treatment planning and monitoring.</p>
+                    </div>
+                    <div class="objective-card">
+                        <h4>🏥 Clinical Integration</h4>
+                        <p>Design the system to simulate radiologist-like interpretations, supporting clinical
+                            decision-making processes in healthcare settings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Methodology & Approach</h2>
+                <div class="methodology-section">
+                    <p>The research employs <strong>Convolutional Neural Networks (CNNs)</strong> as the primary deep
+                        learning architecture for both detection and classification tasks. The system processes
+                        full-field mammogram images through multiple stages:</p>
+                    <ol style="margin: 20px 0; padding-left: 20px;">
+                        <li><strong>Image Preprocessing:</strong> Standardization and enhancement of mammogram images
+                        </li>
+                        <li><strong>Feature Extraction:</strong> CNN layers automatically learn relevant features from
+                            mammogram data</li>
+                        <li><strong>Abnormality Detection:</strong> Identification and localization of suspicious
+                            regions</li>
+                        <li><strong>Classification:</strong> Categorization of detected abnormalities by type and
+                            severity</li>
+                        <li><strong>Visualization:</strong> Generation of bounding boxes and diagnostic reports</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Dataset & Training</h2>
+                <div class="dataset-section">
+                    <p>The system is trained and evaluated using the <strong>DMID Breast Cancer Mammography
+                            Dataset</strong>, which includes:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px;">
+                        <li>Full-field mammogram images from diverse patient populations</li>
+                        <li>Clinical annotations including tissue type classifications</li>
+                        <li>BI-RADS (Breast Imaging Reporting and Data System) scores</li>
+                        <li>Abnormality coordinates and detailed medical metadata</li>
+                        <li>Ground truth labels for both detection and classification tasks</li>
+                    </ul>
+                    <p>This comprehensive dataset enables the system to learn from real clinical scenarios and develop
+                        robust diagnostic capabilities.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Expected Outcomes & Impact</h2>
+                <p>Upon completion, this research aims to deliver:</p>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li><strong>High Accuracy:</strong> A system capable of detecting breast cancer abnormalities with
+                        radiologist-level precision</li>
+                    <li><strong>Clinical Utility:</strong> A tool that can be integrated into existing healthcare
+                        workflows to assist medical professionals</li>
+                    <li><strong>Accessibility:</strong> Technology that can help bridge the gap in specialized
+                        healthcare access, particularly in underserved regions</li>
+                    <li><strong>Research Contribution:</strong> Novel architectural approaches to dual-phase medical
+                        image analysis</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>Potential Applications</h2>
+                <p>Beyond breast cancer detection, the methodologies developed in this research could be adapted for:
+                </p>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li>Other forms of medical imaging analysis (CT scans, MRI, X-rays)</li>
+                    <li>Telemedicine and remote diagnostic applications</li>
+                    <li>Medical education and training tools</li>
+                    <li>Population-level screening programs</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>Research Status</h2>
+                <p>This project is currently in progress as part of my BSc Honours in Computer Science with AI at the
+                    University of Johannesburg. The research involves extensive literature review, model development,
+                    training, and evaluation phases. Results and findings will be published upon completion of the
+                    honours thesis.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mahlalefetsa MJ Mphekwane. All rights reserved.</p>
+            <p>BScHons in Computer Science with AI Student | BSc in Computer Science and Mathematics Graduate</p>
+        </div>
+    </footer>
+</body>
+
+</html>

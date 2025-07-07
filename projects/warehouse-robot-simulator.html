@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Warehouse Robot Simulator - MMJ Mphekwane</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/warehouse-robot-simulator.css">
+
+</head>
+
+<body>
+    <div class="project-hero">
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Portfolio</a>
+            <h1>AI-Powered Warehouse Robot Simulator</h1>
+            <p class="subtitle">Intelligence Agent Based System for Retail Warehouse Robotic Simulation</p>
+            <span class="project-status-large">Completed</span>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="container">
+            <div class="content-section">
+                <h2>Project Overview</h2>
+                <p>This project addresses the inefficiencies in South African grocery retail warehouses by developing a
+                    virtual simulation of an AI-powered warehouse robot system. The simulator demonstrates how mobile
+                    robots can replace manual labor for order fulfillment using advanced AI techniques, particularly the
+                    Traveling Salesman Problem (TSP) optimization.</p>
+
+                <div class="tech-stack">
+                    <span class="tech-item">Artificial Intelligence</span>
+                    <span class="tech-item">Multi-Agent Systems</span>
+                    <span class="tech-item">TSP Optimization</span>
+                    <span class="tech-item">Reinforcement Learning</span>
+                    <span class="tech-item">Path Planning</span>
+                    <span class="tech-item">Computer Simulation</span>
+                </div>
+
+                <a href="https://github.com/yourusername/warehouse-robot-simulator" class="github-link" target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+            <div class="content-section">
+                <h2>Project Demonstration</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="../videos/Grocery Warehouse Simulation 2025-05-20 16-07-34.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p><em>Watch the AI-powered warehouse robots in action, demonstrating optimized path planning and
+                        collaborative order fulfillment.</em></p>
+            </div>
+
+            <div class="content-section">
+                <h2>Problem Statement</h2>
+                <p>With the rapid growth of e-commerce in South Africa, major retailers like Checkers Sixty60 and Pick n
+                    Pay ASAP have introduced same-day delivery services. However, these services still rely heavily on
+                    human workers manually retrieving items from shelves, following inefficient paths similar to regular
+                    shoppers. This results in:</p>
+                <ul>
+                    <li>Longer order processing times</li>
+                    <li>Operational inefficiencies</li>
+                    <li>Occasional delivery delays</li>
+                    <li>Higher operational costs</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>Proposed Solution</h2>
+                <p>The AI-powered warehouse robot simulator demonstrates how automated systems can optimize order
+                    fulfillment through:</p>
+                <ul>
+                    <li><strong>TSP Optimization:</strong> Each robot acts as a "salesman" visiting item locations
+                        (cities) to find the shortest path</li>
+                    <li><strong>Multi-Agent Collaboration:</strong> Three intelligent agents work together to manage
+                        orders, optimize paths, and avoid obstacles</li>
+                    <li><strong>Real-time Adaptation:</strong> Dynamic response to changing warehouse conditions and
+                        obstacles</li>
+                    <li><strong>Load Balancing:</strong> Efficient distribution of orders across multiple robots</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>Intelligent Agent Architecture</h2>
+                <div class="agents-grid">
+                    <div class="agent-card">
+                        <h4>Order Allocation Agent</h4>
+                        <span class="agent-type">Utility-Based Agent</span>
+                        <p>Responsible for assigning customer orders to warehouse robots using a Round Robin
+                            load-balancing strategy. Ensures even distribution of workload and prevents bottlenecks.</p>
+                        <ul>
+                            <li>Load balancing optimization</li>
+                            <li>Real-time robot status monitoring</li>
+                            <li>Efficient order queue management</li>
+                        </ul>
+                    </div>
+
+                    <div class="agent-card">
+                        <h4>Path Optimization Agent</h4>
+                        <span class="agent-type">Hybrid Agent (Goal + Utility)</span>
+                        <p>Utilizes TSP solvers to calculate the shortest and most efficient path for each robot.
+                            Implements the Nearest Neighbor Algorithm while considering warehouse layout and congestion.
+                        </p>
+                        <ul>
+                            <li>TSP-based path optimization</li>
+                            <li>Dynamic route recalculation</li>
+                            <li>Congestion avoidance</li>
+                        </ul>
+                    </div>
+
+                    <div class="agent-card">
+                        <h4>Obstacle Avoidance Agent</h4>
+                        <span class="agent-type">Goal-Based Agent</span>
+                        <p>Enables robots to detect and avoid static obstacles (shelves, walls) and dynamic obstacles
+                            (other robots, people) using reinforcement learning strategies.</p>
+                        <ul>
+                            <li>Real-time obstacle detection</li>
+                            <li>Reinforcement learning navigation</li>
+                            <li>Collision prevention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>PEAS Framework Analysis</h2>
+                <p>The system environment is analyzed using the PEAS (Performance, Environment, Actuators, Sensors)
+                    framework:</p>
+                <table class="peas-table">
+                    <thead>
+                        <tr>
+                            <th>Agent Type</th>
+                            <th>Performance Measures</th>
+                            <th>Environment</th>
+                            <th>Actuators</th>
+                            <th>Sensors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Order Allocation Agent</td>
+                            <td>Efficient order distribution, minimizing idle time, balancing robot workload</td>
+                            <td>Virtual warehouse with multiple robots, orders, and checkouts</td>
+                            <td>Assigns orders to robots based on workload and availability</td>
+                            <td>System status updates on robot availability, order queue</td>
+                        </tr>
+                        <tr>
+                            <td>Path Optimization Agent</td>
+                            <td>Shortest possible path, minimal energy use, quick order fulfillment</td>
+                            <td>Virtual warehouse with aisles, shelves, and pickup points</td>
+                            <td>Generates optimized paths for robots to follow</td>
+                            <td>Warehouse layout data, order item locations, robot positions</td>
+                        </tr>
+                        <tr>
+                            <td>Obstacle Avoidance Agent</td>
+                            <td>Avoid collisions, smooth navigation</td>
+                            <td>Virtual warehouse with static and moving obstacles</td>
+                            <td>Adjusts robot movement to avoid collisions</td>
+                            <td>Lidar/camera-based object detection, real-time position tracking</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-section">
+                <h2>Task Environment Properties</h2>
+                <div class="environment-properties">
+                    <div class="property-item">
+                        <h5>Partially Observable</h5>
+                        <p>Robots have limited sensor range and may not detect all obstacles instantly</p>
+                    </div>
+                    <div class="property-item">
+                        <h5>Stochastic</h5>
+                        <p>Contains unpredictable elements like sudden movements of people or robots</p>
+                    </div>
+                    <div class="property-item">
+                        <h5>Sequential</h5>
+                        <p>Current decisions impact future outcomes and robot interactions</p>
+                    </div>
+                    <div class="property-item">
+                        <h5>Dynamic</h5>
+                        <p>Environment evolves in real-time with new orders and robot movements</p>
+                    </div>
+                    <div class="property-item">
+                        <h5>Discrete & Continuous</h5>
+                        <p>Order allocation works in steps while obstacle avoidance is continuous</p>
+                    </div>
+                    <div class="property-item">
+                        <h5>Multi-Agent</h5>
+                        <p>Multiple AI agents collaborate and influence each other's activities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Expected Benefits</h2>
+                <ul>
+                    <li><strong>Improved Efficiency:</strong> Robots complete orders faster than human workers</li>
+                    <li><strong>Cost Reduction:</strong> Reduced labor costs and operational expenses</li>
+                    <li><strong>Error Minimization:</strong> Automated systems reduce human errors</li>
+                    <li><strong>Scalability:</strong> Easy scaling for high-demand periods</li>
+                    <li><strong>Space Optimization:</strong> Better utilization of warehouse space</li>
+                    <li><strong>24/7 Operation:</strong> Continuous operation without breaks</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>Technical Implementation</h2>
+                <p>The simulator was developed using advanced AI techniques including:</p>
+                <ul>
+                    <li><strong>Traveling Salesman Problem (TSP) Solvers:</strong> Nearest Neighbor Algorithm for path
+                        optimization</li>
+                    <li><strong>Reinforcement Learning:</strong> For dynamic obstacle avoidance and navigation</li>
+                    <li><strong>Multi-Agent Systems:</strong> Coordinated collaboration between different agent types
+                    </li>
+                    <li><strong>Load Balancing Algorithms:</strong> Round Robin strategy for order distribution</li>
+                    <li><strong>Real-time Simulation:</strong> Dynamic environment with moving obstacles and changing
+                        conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mahlalefetsa MJ Mphekwane. All rights reserved.</p>
+            <p>BScHons in Computer Science with AI Student | BSc in Computer Science and Mathematics Graduate</p>
+        </div>
+    </footer>
+</body>
+
+</html>
