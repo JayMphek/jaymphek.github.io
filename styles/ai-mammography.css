@@ -49,10 +49,10 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.back-button:hover {
+/* .back-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .previous-button {
     position: fixed;
@@ -257,11 +257,4 @@
         grid-template-columns: 1fr;
     }
 
-    .back-button {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
 }
